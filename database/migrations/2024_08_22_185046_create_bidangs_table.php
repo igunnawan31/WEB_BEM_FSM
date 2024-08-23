@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('bidangs', function (Blueprint $table) {
             $table->id();
-            $table->string('bidang');
+            $table->string('bidang')->unique();
             $table->string('slug')->unique();
             $table->text('penjelasan');
             $table->string('path_foto_bidang');

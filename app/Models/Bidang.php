@@ -17,7 +17,7 @@ class Bidang extends Model
         'path_foto_bidang',
     ];
 
-    public function bidangs() : HasMany {
-        return $this->hasMany(Anggota::class, 'bidang_id');
+    public function anggotas() : HasMany {
+        return $this->hasMany(Anggota::class);
     }
 }

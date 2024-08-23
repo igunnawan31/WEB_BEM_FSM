@@ -15,13 +15,15 @@ return new class extends Migration
             $table->id();
             $table->string('nama');
             $table->foreignId('bidang_id')->constrained(
-                table: 'bidangs',
-                indexName: 'bidangs_anggota_id'
+                table:'bidangs',
+                indexName: 'anggotas_bidang_id'
             );
-            $table->string('bidang');
+            // $table->string('bidang');
             $table->string('jabatan');
             $table->string('path_foto_anggota');
             $table->timestamps();
+
+            // $table->foreign('id')->references('id')->on('bidangs');
         });
     }
 

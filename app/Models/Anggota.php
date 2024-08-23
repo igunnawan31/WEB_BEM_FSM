@@ -9,7 +9,14 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Anggota extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'nama',
+        'bidang_id',
+        'jabatan',
+        'path_foto_anggota',
+    ];
+
     public function bidang() : BelongsTo {
-        return $this->belongsTo(Bidang::class);
+        return $this->belongsTo(Bidang::class, 'bidang_id', 'bidang_id');
     }
 }
