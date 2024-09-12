@@ -15,6 +15,7 @@ class Bidang extends Model
         'slug',
         'penjelasan',
         'path_foto_bidang',
+        'path_logo_bidang',
     ];
 
     public function anggotas() : HasMany {

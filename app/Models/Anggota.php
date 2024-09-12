@@ -17,6 +17,6 @@ class Anggota extends Model
     ];
 
     public function bidang() : BelongsTo {
-        return $this->belongsTo(Bidang::class, 'bidang_id', 'bidang_id');
+        return $this->belongsTo(Bidang::class, 'bidang_id');
     }
 }

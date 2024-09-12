@@ -27,6 +27,7 @@ class BidangResource extends Resource
                 Forms\Components\TextInput::make('slug')->label('Slug')->required(),
                 Forms\Components\TextInput::make('penjelasan')->label('Deskripsi Singkat')->required(),
                 Forms\Components\TextInput::make('path_foto_bidang')->label('Path Foto Bidang')->required(),
+                Forms\Components\TextInput::make('path_logo_bidang')->label('Path Logo Bidang')->required(),
                 // $table->String('Bidang');
                 // $table->String('slug')->unique();
                 // $table->text('Penjelasan');
@@ -42,9 +43,11 @@ class BidangResource extends Resource
                 Tables\Columns\TextColumn::make('bidang')->label('Nama Bidang'),
                 Tables\Columns\TextColumn::make('slug')->label('Slug'),
                 Tables\Columns\TextColumn::make('penjelasan')->label('Deskripsi Singkat'),
-                Tables\Columns\TextColumn::make('path_foto_bidang')->label('Path Foto Bidang'),
-                Tables\Columns\TextColumn::make('created_at')->label('Created At'),
-                Tables\Columns\TextColumn::make('updated_at')->label('Updated At'),
+                Tables\Columns\ImageColumn::make('path_foto_bidang')->label('Path Foto Bidang'),
+                Tables\Columns\ImageColumn::make('path_logo_bidang')->label('Path Logo Bidang'),
+                
+                // Tables\Columns\TextColumn::make('created_at')->label('Created At'),
+                // Tables\Columns\TextColumn::make('updated_at')->label('Updated At'),
             ])
             ->filters([
                 //

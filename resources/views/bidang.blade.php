@@ -63,34 +63,6 @@
         </div>
     </section>
 
-    {{-- Section Ketua dan Wakil End --}}
-
-    {{-- Section Sekre dan Bendahara --}}
-
-    {{-- <section id="sekrebenda" class="pb-14">
-        <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
-            <div class="rounded-lg shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-gradient-to-t from-[#121026] to-[#ED8720] md:w-80 lg:w-72 ease-in-out transition duration-300 relative">
-                <img src="{{ asset('assets/kabem-removebg.png') }}" alt="Gambar Contoh" class="w-full h-full object-cover hover:scale-110 transition ease-in-out">
-                <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
-                    <div class="text-center text-white">
-                        <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                        <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
-                    </div>
-                </div>
-            </div>
-            <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative">
-                <img src="{{ asset('assets/wakabem_remove.png') }}" alt="Person" class="w-full h-full object-cover hover:scale-110 transition ease-in-out" />
-                <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
-                    <div class="text-center text-white">
-                        <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                        <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>   --}}
-
     <section id="About" class="pb-10 px-4 lg:px-8">
         <div class="container mx-auto">
             <div class="flex flex-wrap">
@@ -209,6 +181,27 @@
             <h1 class="text-primary uppercase"><span class="text-[#ED8720]">-</span> Bidang dan Biro <span class="text-[#ED8720]">-</span></h1>
         </div> --}}
         <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
+            {{-- @foreach ($bidangs as $bidang)
+                <!-- Your HTML structure here -->
+                <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-gradient-to-t from-[#121026] to-[#ED8720] md:w-80 lg:w-72 ease-in-out transition duration-300 relative">
+                    <img src="assets/wakabem_remove.png" alt="Gambar Contoh" class="w-full h-full object-cover hover:scale-110 transition ease-in-out">
+                    <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
+                        <div class="text-center text-white">
+                            <p class="font-bold text-xs">{{ $bidang->bidang }}</p>
+                        </div>
+                    </div>
+                </div>
+            @endforeach --}}
+            @foreach ($bidangs as $bidang)
+                <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-gradient-to-t from-[#121026] to-[#ED8720] md:w-80 lg:w-72 ease-in-out transition duration-300 relative">
+                    <img src="{{ asset($bidang->path_foto_bidang) }}" alt="{{ $bidang->bidang }}" class="w-full h-full object-cover hover:scale-110 transition ease-in-out">
+                    <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
+                        <div class="text-center text-white">
+                            <p class="font-bold text-xs">{{ $bidang->bidang }}</p>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
             <div class="rounded-lg shadow-lg overflow-hidden mb-10
             sm:w-64 bg-white md:w-80 lg:w-72  ease-in-out transition duration-300 relative">
                 <img src="assets/kmi.png" alt="Gambar Contoh" class="w-full h-full object-cover hover:scale-110 transition ease-in-out">
@@ -319,7 +312,7 @@
                     </div>
                 </div>
             </div>
-
+        </div>
     </section>
 
 

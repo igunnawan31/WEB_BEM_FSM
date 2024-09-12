@@ -1,5 +1,5 @@
 <footer class="py-16 bg-[#121026] text-white">
-    <div class="container ">
+    <div class="mx-auto container ">
         <div class="flex flex-wrap mx-auto px-4 items-center justify-center">
             <!-- logo -->
             <div class="w-full px-4 mb-8 md:mb-0 lg:w-3/6">

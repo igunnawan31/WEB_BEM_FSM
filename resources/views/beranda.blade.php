@@ -42,40 +42,23 @@
 
     <!-- Section About Start -->
     <section id="About" class="pt-24 px-4 lg:px-8">
-        <!-- <h4 class="text-center font-Poppins text-2xl md:text-3xl lg:text-4xl text-slate-800 font-bold">About Me</h4> -->
         <div class="container mx-auto">
             <div class="flex flex-wrap">
-                <div id="default-carousel" class="relative w-full px-2 lg:w-1/2 justify-center mb-10" data-carousel="slide">
+                <div id="default-carousel" class="relative w-full px-2 lg:w-1/2 justify-center mt-5 mb-10" data-carousel="slide">
                     <!-- Carousel wrapper -->
-                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <div class="relative h-72 overflow-hidden rounded-lg md:h-96">
                         <!-- Item 1 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="{{ asset('assets/makrab.png') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
-                        </div>
-                        <!-- Item 2 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="{{ asset('assets/makrab.png') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
-                        </div>
-                        <!-- Item 3 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="{{ asset('assets/makrab.png') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
-                        </div>
-                        <!-- Item 4 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="{{ asset('assets/makrab.png') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
-                        </div>
-                        <!-- Item 5 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="{{ asset('assets/makrab.png') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
-                        </div>
+                        @foreach($posts as $index => $post)
+                            <div class="{{ $index === 0 ? '' : 'hidden' }} duration-700 ease-in-out" data-carousel-item>
+                                <img src="{{ asset('storage/' . $post->post_foto) }}" class="absolute block w-full rounded-lg" alt="Post Image">
+                            </div>
+                        @endforeach
                     </div>
                     <!-- Slider indicators -->
-                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                    <div class="absolute z-30 flex -translate-x-1/2 bottom-7 left-1/2 space-x-3 rtl:space-x-reverse">
+                        @foreach($posts as $index => $post)
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="{{ $index === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $index + 1 }}" data-carousel-slide-to="{{ $index }}"></button>
+                        @endforeach
                     </div>
                     <!-- Slider controls -->
                     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
@@ -118,10 +101,19 @@
                             </div>
                         </div>
                     </div>
+                    <div class="w-full mt-10">
+                        <a href="/informasi" class="block w-full text-center text-Poppins font-bold py-3 
+                        bg-white border-2 border-primary rounded-lg 
+                        hover:bg-primary hover:text-white
+                        transition ease-in-out duration-300">
+                            Tentang Kami
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
     <!-- Section About End -->
 
     <!-- Section Company Profile Start -->

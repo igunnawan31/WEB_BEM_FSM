@@ -11,13 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bidangs', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('bidang')->unique();
-            $table->string('slug')->unique();
-            $table->text('penjelasan');
-            $table->string('path_foto_bidang');
-            $table->string('path_logo_bidang')->nullable();
+            $table->string('post_foto');
+            $table->string('deskripsi_foto');
             $table->timestamps();
         });
     }
@@ -27,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('bidangs');
+        Schema::dropIfExists('posts');
     }
 };
