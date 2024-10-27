@@ -28,11 +28,6 @@ class BidangResource extends Resource
                 Forms\Components\TextInput::make('penjelasan')->label('Deskripsi Singkat')->required(),
                 Forms\Components\TextInput::make('path_foto_bidang')->label('Path Foto Bidang')->required(),
                 Forms\Components\TextInput::make('path_logo_bidang')->label('Path Logo Bidang')->required(),
-                // $table->String('Bidang');
-                // $table->String('slug')->unique();
-                // $table->text('Penjelasan');
-                // $table->String('Path_Foto_Bidang');
-                // $table->timestamps();
             ]);
     }
 
