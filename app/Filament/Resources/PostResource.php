@@ -34,6 +34,7 @@ class PostResource extends Resource
                         '16:9'
                     ])
                     ->label('Foto Acara BEM FSM')
+                    ->directory('postdepan')
                     ->required(),
                 TextInput::make('deskripsi_foto')
                     ->label('Deskripsi Acara BEM FSM')

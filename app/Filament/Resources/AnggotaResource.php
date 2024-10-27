@@ -55,7 +55,7 @@ class AnggotaResource extends Resource
                     ->imageEditorAspectRatios([
                         '1:1'
                     ])
-                    ->directory('public')
+                    ->directory('anggota')
                     ->label('Foto Anggota')
                     ->required()
             ]);
