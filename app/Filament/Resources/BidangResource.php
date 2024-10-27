@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <?php
 
 namespace App\Filament\Resources;
@@ -80,4 +78,3 @@ class BidangResource extends Resource
         ];
     }
 }
->>>>>>> parent of 426ad41 (update post ig dan raphin)
