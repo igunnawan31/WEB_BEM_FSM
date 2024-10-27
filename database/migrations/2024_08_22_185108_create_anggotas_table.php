@@ -20,7 +20,7 @@ return new class extends Migration
             );
             // $table->string('bidang');
             $table->string('jabatan');
-            $table->string('path_foto_anggota');
+            $table->string('path_foto_anggota')->nullable();
             $table->timestamps();
 
             // $table->foreign('id')->references('id')->on('bidangs');

@@ -19,20 +19,20 @@
                 lg:bg-transparent ">
                     <ul class="block lg:flex">
                         <li class="group">
-                            <a href="/" class="text-base text-white font-semibold p-2 mx-8 rounded-lg
-                            flex group-hover:text-orange  hover:bg-white">Beranda</a>
+                            <a href="/" class="text-base text-slate-500 p-2 mx-8 rounded-lg
+                            flex group-hover:text-orange group-hover:shadow-md">Beranda</a>
                         </li>
                         <li class="group">
-                            <a href="/tentangkami" class="text-base text-white font-semibold p-2 mx-8 rounded-lg
-                            flex group-hover:text-orange hover:bg-white">Tentang Kami</a>
+                            <a href="/tentangkami" class="text-base text-slate-500 p-2 mx-8 rounded-lg
+                            flex group-hover:text-orange group-hover:shadow-md">Tentang Kami</a>
                         </li>
                         <li class="group">
-                            <a href="/bidang" class="text-base text-white font-semibold p-2 mx-8 rounded-lg
-                            flex group-hover:text-orange hover:bg-white">Bidang/Biro</a>
+                            <a href="/bidangs" class="text-base text-slate-500 p-2 mx-8 rounded-lg
+                            flex group-hover:text-orange group-hover:shadow-md">Bidang/Biro</a>
                         </li>
                         <li class="group">
-                            <a href="/informasi" class="text-base text-white font-semibold p-2 mx-8 rounded-lg
-                            flex group-hover:text-orange hover:bg-white">Informasi</a>
+                            <a href="/informasi" class="text-base text-slate-500 p-2 mx-8 rounded-lg
+                            flex group-hover:text-orange group-hover:shadow-md">Informasi</a>
                         </li>
                     </ul>
                 </nav>

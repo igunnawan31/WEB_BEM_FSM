@@ -17,21 +17,21 @@
     <!-- Header End -->
 
     <!-- Section Home Start -->
-    <section id="Home" class="relative min-h-screen bg-cover bg-center overflow-hidden" style="background-image: url('assets/fakultas.png');">
+    <section id="Home" class="relative min-h-screen pb-36 pt-36 bg-cover bg-center" style="background-image: url('assets/fsm.png');">
         <div class="flex items-center justify-center h-full py-[13rem]">
             <div class="container mx-auto px-4 lg:px-8">
-                <div class="flex flex-wrap justify-center">
-                    
+                <div class="flex flex-wrap">
+                    <div class="w-full px-2 lg:w-1/2 flex justify-center">
                         <div class="relative mb-10 lg:mb-0">
                             <div class="w-[17rem] h-[17rem] rounded-full shadow-lg bg-blue-200 mx-auto group relative overflow-visible">
                                 <img src="{{ asset('assets/riung.png') }}" alt="Riung Mandala" class="object-cover w-full h-full rounded-full">
                             </div>
                         </div>
-                    
+                    </div>
                     <div class="w-full px-2 lg:w-1/2 flex items-center justify-center lg:justify-start lg:pl-8">
                         <div class="text-center">
-                            <h1 class="text-7xl font-bold text-white md:text-8xl lg:text-9xl lg:text-center">BEM FSM</h1>
-                            <h2 class="text-2xl font-bold text-white md:text-3xl lg:text-4xl lg:text-center">-Kabinet Riung Mandala-</h2>
+                            <h1 class="text-7xl font-bold text-white md:text-8xl lg:text-9xl lg:text-left">BEM FSM</h1>
+                            <h2 class="text-2xl font-bold text-white md:text-3xl lg:text-4xl lg:text-left">-Kabinet Riung Mandala-</h2>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <div class="w-full mt-10">
-                        <a href="/informasi" class="block w-full text-center text-Poppins font-bold py-3 
+                        <a href="/tentangkami" class="block w-full text-center text-Poppins font-bold py-3 
                         bg-white border-2 border-primary rounded-lg 
                         hover:bg-primary hover:text-white
                         transition ease-in-out duration-300">

@@ -12,7 +12,17 @@ class BidangController extends Controller
         $bidangs = Bidang::all();
 
         // Pass the bidang records to the view
+<<<<<<< HEAD
         return view('bidang', ['bidangs' => $bidangs]);
+=======
+        return view('bidangs', compact('bidangs'));
+    }
+
+    public function show($namabidang) 
+    {
+        $bidang = Bidang::where('bidang', $namabidang)->firstOrFail();
+        return view('bidang', compact('bidang'));
+>>>>>>> branch_igun
     }
 }
 

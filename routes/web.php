@@ -9,14 +9,21 @@ Route::get('/tentangkami', function () {
     return view('tentangkami');
 });
 
+Route::get('/bidangs', function () {
+    return view('bidangs');
+});
 
-Route::get('/divisi', function () {
-    return view('divisi');
+Route::get('/informasi', function () {
+    return view('informasi');
 });
 
 // Route::get('/bidang')
 
 Route::get('/', [PostController::class, 'index'])->name('home');
 
-Route::get('/bidang', [BidangController::class, 'index']);
-Route::get('/informasi', [IgpostController::class, 'index']);
+
+// Route to display all templates (our products)
+Route::get('/bidangs', [BidangController::class, 'index']);
+
+// Route to display a specific template's details
+Route::get('/bidangs/{bidang}', [BidangController::class, 'show']);
