@@ -80,7 +80,11 @@
                 </div>
                 <div class="w-full px-2 lg:w-1/2 lg:pl-8">
                     <h1 class="text-3xl font-bold text-slate-800 md:text-4xl lg:text-5xl">BEM FSM 2024</h1>
-                    <p class="font-medium text-slate-700 mb-4 mt-1 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta, enim nisi magni ratione doloremque. Perferendis totam quod id. Tenetur iusto saepe dolores commodi repellendus beatae pariatur voluptate, mollitia earum minima rem, dolor hic explicabo! In unde impedit possimus blanditiis at cum, quia laudantium odit delectus optio omnis amet architecto, consectetur cumque. Quos corporis aut, similique facere ipsam doloribus quasi.</p>
+                    <p class="font-medium text-slate-700 mb-4 mt-1 text-justify">Badan Eksekutif Mahasiswa (BEM)
+                        Fakultas Sains dan Matematika (FSM) Universitas Diponegoro (Undip) adalah organisasi
+                        kemahasiswaan yang berperan sebagai lembaga eksekutif di tingkat fakultas. BEM FSM bertugas
+                        untuk menjalankan fungsi representasi mahasiswa serta mengkoordinasikan berbagai kegiatan yang
+                        bertujuan untuk meningkatkan kesejahteraan mahasiswa di lingkungan FSM.</p>
                     <div class="flex flex-wrap justify-center lg:justify-start space-x-4">
                         <div class="text-center flex-1">
                             <div class="bg-black p-4 text-white rounded-md">
@@ -102,7 +106,7 @@
                         </div>
                     </div>
                     <div class="w-full mt-10">
-                        <a href="/informasi" class="block w-full text-center text-Poppins font-bold py-3 
+                        <a href="/tentangkami" class="block w-full text-center text-Poppins font-bold py-3 
                         bg-white border-2 border-primary rounded-lg 
                         hover:bg-primary hover:text-white
                         transition ease-in-out duration-300">

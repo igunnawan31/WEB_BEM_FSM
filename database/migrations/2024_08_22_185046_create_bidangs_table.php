@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('bidang')->unique();
             $table->string('slug')->unique();
             $table->text('penjelasan');
-            $table->string('path_foto_bidang');
+            $table->string('path_foto_bidang')->nullable();
             $table->string('path_logo_bidang')->nullable();
             $table->timestamps();
         });

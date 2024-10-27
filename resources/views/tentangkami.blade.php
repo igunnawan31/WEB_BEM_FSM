@@ -34,13 +34,13 @@
                             <img src="assets/wakabem.png" alt="wakabem" class="rounded-full hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out">
                         </div>
                         <!-- button -->
-                        <a class="hidden text-xl bg-[#121026] rounded-full py-2 px-4 text-white hover:shadow-2xl hover:bg-orange transition duration-300 ease-in-out md:block md:text-sm lg:text-xl md:order-2 animate-on-scroll" href="/bidang">Selengkapnya</a>
+                        <a class="hidden text-xl bg-[#121026] rounded-full py-2 px-4 text-white hover:shadow-2xl hover:bg-orange transition duration-300 ease-in-out md:block md:text-sm lg:text-xl md:order-2 animate-on-scroll" href="/bidangs">Selengkapnya</a>
                         <!-- kabem -->
                         <div class="order-1 w-full flex justify-center items-center rounded-full md:order-last animate-on-scroll">
                             <img src="assets/kabem.png" alt="kabem" class="rounded-full hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out">
                         </div>
                         <!-- button for mobile -->
-                        <a class="order-last text-sm bg-[#121026] rounded-full py-3 px-8 text-white hover:shadow-2xl hover:bg-orange transition duration-300 ease-in-out md:hidden" href="/bidang">Selengkapnya</a>
+                        <a class="order-last text-sm bg-[#121026] rounded-full py-3 px-8 text-white hover:shadow-2xl hover:bg-orange transition duration-300 ease-in-out md:hidden" href="/bidangs">Selengkapnya</a>
                     </div>
                 </div>
             </div>

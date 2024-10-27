@@ -27,7 +27,7 @@
                             flex group-hover:text-orange group-hover:shadow-md">Tentang Kami</a>
                         </li>
                         <li class="group">
-                            <a href="/bidang" class="text-base text-slate-500 p-2 mx-8 rounded-lg
+                            <a href="/bidangs" class="text-base text-slate-500 p-2 mx-8 rounded-lg
                             flex group-hover:text-orange group-hover:shadow-md">Bidang/Biro</a>
                         </li>
                         <li class="group">

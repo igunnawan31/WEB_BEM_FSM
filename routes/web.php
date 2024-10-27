@@ -8,8 +8,8 @@ Route::get('/tentangkami', function () {
     return view('tentangkami');
 });
 
-Route::get('/bidang', function () {
-    return view('bidang');
+Route::get('/bidangs', function () {
+    return view('bidangs');
 });
 
 Route::get('/informasi', function () {
@@ -20,4 +20,9 @@ Route::get('/informasi', function () {
 
 Route::get('/', [PostController::class, 'index'])->name('home');
 
-Route::get('/divisi', [BidangController::class, 'namabidang']);
+
+// Route to display all templates (our products)
+Route::get('/bidangs', [BidangController::class, 'index']);
+
+// Route to display a specific template's details
+Route::get('/bidangs/{bidang}', [BidangController::class, 'show']);
