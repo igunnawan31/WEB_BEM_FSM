@@ -14,14 +14,14 @@
 </head>
 <body>
     <x-header></x-header>
-    <section id="Home" class="relative pb-36 pt-36 bg-cover bg-center" style="background-image: url('assets/biro_kmi.png');">
+    <section id="Home" class="relative pb-36 pt-36 bg-cover bg-center" style="background-image: url('{{ asset($bidang->path_foto_bidang) }}');">
         <div class="absolute inset-0 bg-[#121026] bg-opacity-80"></div>
         <div class="flex items-center justify-center h-full my-[10rem] relative z-10">
             <div class="container mx-auto lg:px-8">
                 <div class="w-full flex items-center justify-center lg:pl-8">
                     <div class="text-center lg:text-left">
-                        <h1 class="text-7xl text-center font-bold text-white md:text-8xl lg:text-9xl">BIRO</h1>
-                        <h2 class="text-xl font-bold text-white md:text-2xl lg:text-3xl">{{ $bidang->bidang }}</h2>
+                        <h1 class="text-7xl text-center font-bold text-white md:text-8xl lg:text-9xl">{{ $firstWord }}</h1>
+                        <h2 class="text-xl font-bold text-white md:text-2xl lg:text-3xl text-center">{{ $remainingWords }}</h2>
                     </div>
                 </div>
             </div>
@@ -63,34 +63,23 @@
     <!-- Section Ketua dan Wakil Start -->
     <section id="ketuawakil" class="pb-14">
         <div class="flex items-center justify-center">
-            <div class="block lg:hidden rounded-lg mb-10 sm:w-64 md:w-80 lg:w-72 bg-transparent">
-                <img src="assets/kmi.png" alt="Person" class="w-full h-full object-cover rounded-lg hover:scale-110 transition ease-in-out"/>
+            <div class="block rounded-lg mb-10 sm:w-64 md:w-80 lg:w-72 bg-transparent">
+                <img src="{{ asset($bidang->path_logo_bidang) }}" alt="Foto Bidang" class="w-full h-full object-cover rounded-lg hover:scale-110 transition ease-in-out"/>
             </div>
         </div>
-        
         <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
-            <div class="rounded-lg shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-gradient-to-t from-[#121026] to-[#ED8720] md:w-80 lg:w-72  ease-in-out transition duration-300 relative">
-                <img src="assets/wakabem_remove.png" alt="Gambar Contoh" class="w-full h-full object-cover hover:scale-110 transition ease-in-out">
-                <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
-                    <div class="text-center text-white">
-                        <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                        <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
+            @foreach ($ketua as $member)
+                <div class="rounded-lg shadow-lg overflow-hidden mb-10
+                sm:w-64 bg-gradient-to-t from-[#121026] to-[#ED8720] md:w-80 lg:w-72  ease-in-out transition duration-300 relative">
+                    <img src="{{ asset('storage/' . $member->path_foto_anggota) }}" alt="Gambar Contoh" class="w-full h-full object-cover scale-[1.5] hover:scale-[1.75] -translate-y-20 transition ease-in-out">
+                    <div class="absolute w-full h-20 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
+                        <div class="text-center text-white">
+                            <p class="font-bold text-xs">{{ $member->nama }}</p>
+                            <p class="text-xs">{{ $member->jabatan }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="hidden lg:block rounded-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 bg-transparent ease-in-out transition duration-300">
-                <img src="assets/kmi.png" alt="Person" class="w-full h-full object-cover rounded-lg hover:scale-110 transition ease-in-out"/>
-            </div>
-            <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative">
-                <img src="assets/wakabem_remove.png" alt="Person" class="w-full h-full object-cover hover:scale-110 transition ease-in-out" />
-                <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
-                    <div class="text-center text-white">
-                        <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                        <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
     
@@ -103,15 +92,17 @@
     <div class="container swiper">
         <div class="slider-wrapper">
             <div class="card-list swiper-wrapper">
+                @foreach ($anggota as $member)
                 <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative swiper-slide">
-                    <img src="assets/wakabem_remove.png" alt="User Image" class=" w-full h-full object-cover hover:scale-110 transition ease-in-out">
-                    <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
+                    <img src="{{ asset('storage/' . $member->path_foto_anggota) }}" alt="User Image" class=" w-full h-full object-cover scale-[1.5] hover:scale-[1.75] -translate-y-20 transition ease-in-out">
+                    <div class="absolute w-full h-16 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
                         <div class="text-center text-white">
-                            <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                            <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
+                            <p class="font-bold text-xs">{{ $member->nama }}</p>
+                            <p class="text-xs">{{ $member->jabatan }}</p>
                         </div>
                     </div>
                 </div>
+                @endforeach
                 <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative swiper-slide">
                     <img src="assets/wakabem_remove.png" alt="User Image" class=" w-full h-full object-cover hover:scale-110 transition ease-in-out">
                     <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">

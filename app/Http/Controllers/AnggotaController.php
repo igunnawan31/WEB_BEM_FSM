@@ -14,7 +14,7 @@ class AnggotaController extends Controller
     {
         $anggotas = Anggota::all();
 
-        return view('bidang', ['anggotas' => $anggotas]);
+        return view('bidang', compact('anggota'));
     }
 
     /**

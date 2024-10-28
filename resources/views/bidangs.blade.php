@@ -108,7 +108,7 @@
         <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
             <div class="rounded-lg shadow-lg overflow-hidden mb-10
             sm:w-64 bg-gradient-to-t from-[#121026] to-[#ED8720] md:w-80 lg:w-72  ease-in-out transition duration-300 relative">
-                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Gambar Contoh" class="w-full h-full object-cover scale-150 hover:scale-[1.75] transition ease-in-out">
+                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Gambar Contoh" class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out">
                 <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
                     <div class="text-center text-white">
                         <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative">
-                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person" class="w-full h-full object-cover scale-150 hover:scale-[1.75] transition ease-in-out" />
+                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person" class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out" />
                 <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
                     <div class="text-center text-white">
                         <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
@@ -126,7 +126,7 @@
                 </div>
             </div>
             <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative">
-                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person" class="w-full h-full object-cover scale-150 hover:scale-[1.75] transition ease-in-out" />
+                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person" class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out" />
                 <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
                     <div class="text-center text-white">
                         <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
@@ -135,7 +135,7 @@
                 </div>
             </div>
             <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative">
-                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person" class="w-full h-full object-cover scale-150 hover:scale-[1.75] transition ease-in-out" />
+                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person" class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out" />
                 <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
                     <div class="text-center text-white">
                         <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
@@ -144,7 +144,7 @@
                 </div>
             </div>
             <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative">
-                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person" class="w-full h-full object-cover scale-150 hover:scale-[1.75] transition ease-in-out" />
+                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person" class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out" />
                 <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
                     <div class="text-center text-white">
                         <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
@@ -153,7 +153,7 @@
                 </div>
             </div>
             <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative">
-                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person" class="w-full h-full object-cover scale-150 hover:scale-[1.75] transition ease-in-out" />
+                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person" class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out" />
                 <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
                     <div class="text-center text-white">
                         <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
