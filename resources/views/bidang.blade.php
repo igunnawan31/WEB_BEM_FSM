@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 @endforeach
-                <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative swiper-slide">
+                {{-- <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative swiper-slide">
                     <img src="assets/wakabem_remove.png" alt="User Image" class=" w-full h-full object-cover hover:scale-110 transition ease-in-out">
                     <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
                         <div class="text-center text-white">
@@ -138,7 +138,7 @@
                             <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -156,61 +156,77 @@
             <div class="container swiper">
                 <div class="slider-wrapper">
                     <div class="card-list swiper-wrapper">
-                        <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-transparent relative swiper-slide">
-                            <!-- <div class="w-full h-full bg-[#ED8720] block z-10">
-                                
-                            </div>
-                            <div class="w-full h-full bg-white"></div> -->
-                            <div class="relative flex group w-96 h-96 bg-[#FBBD22] rounded-lg shadow-lg justify-center items-center">
-                                <div class="absolute flex items-center justify-center">
-                                    warna kuning
+                        
+                        <div class="swiper-slide">
+                            <div class="relative group w-full sm:w-64 md:w-80 lg:w-72 h-96 lg:h-[28rem] bg-cover bg-center rounded-lg shadow-lg hover:shadow-xl transform transition duration-500 animate-on-scroll" 
+                                 style="background-image:url('assets/makrab.png');">
+                                {{-- efek warna --}}
+                                <div class="absolute inset-0 bg-[#8781cb] rounded-lg opacity-60 transition-opacity duration-500 group-hover:opacity-0"></div>
+                                {{-- awal --}}
+                                <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl md:2xl transition-all duration-500 group-hover:translate-y-[-20px] group-hover:opacity-0">
+                                    Program Kerja 1
                                 </div>
-                                
-                            </div>
-                            <!-- <img src="assets/wakabem_remove.png" alt="User Image" class=" w-full h-full object-cover hover:scale-110 transition ease-in-out">
-                            <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
-                                <div class="text-center text-white">
-                                    <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                                    <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative swiper-slide">
-                            <img src="assets/wakabem_remove.png" alt="User Image" class=" w-full h-full object-cover hover:scale-110 transition ease-in-out">
-                            <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
-                                <div class="text-center text-white">
-                                    <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                                    <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
+                                {{-- saat hover --}}
+                                <div class="absolute inset-0 flex flex-col items-center text-white justify-center text-center text-white-400 p-4 opacity-0 translate-y-[20px] transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                                    <h2 class="font-bold text-xl">Program Kerja 1</h2>
+                                    <p class="text-sm mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla, deserunt cum dolores qui tempora ipsa, eveniet non inventore quis commodi, eaque similique necessitatibus perspiciatis dicta incidunt natus sequi iure.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative swiper-slide">
-                            <img src="assets/wakabem_remove.png" alt="User Image" class=" w-full h-full object-cover hover:scale-110 transition ease-in-out">
-                            <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
-                                <div class="text-center text-white">
-                                    <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                                    <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
+
+                        <div class="swiper-slide">
+                            <div class="relative group w-full sm:w-64 md:w-80 lg:w-72 h-96 lg:h-[28rem] bg-cover bg-center rounded-lg shadow-lg hover:shadow-xl transform transition duration-500 animate-on-scroll"
+                                 style="background-image: url('assets/makrab.png');">
+                                {{-- efek --}}
+                                <div class="absolute inset-0 bg-[#121026] rounded-lg opacity-60 transition-opacity duration-500 group-hover:opacity-0"></div>
+                                {{-- awal --}}
+                                <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl md:2xl transition-all duration-500 group-hover:translate-y-[-20px] group-hover:opacity-0">
+                                    Program Kerja 2
+                                </div>
+                                {{-- saat hover --}}
+                                <div class="absolute inset-0 flex flex-col items-center text-white justify-center text-center text-white-400 p-4 opacity-0 translate-y-[20px] transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                                    <h2 class="font-bold text-xl">Program Kerja 2</h2>
+                                    <p class="text-sm mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla, deserunt cum dolores qui tempora ipsa, eveniet non inventore quis commodi, eaque similique necessitatibus perspiciatis dicta incidunt natus sequi iure.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative swiper-slide">
-                            <img src="assets/wakabem_remove.png" alt="User Image" class=" w-full h-full object-cover hover:scale-110 transition ease-in-out">
-                            <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
-                                <div class="text-center text-white">
-                                    <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                                    <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
+
+                        <div class="swiper-slide">
+                            <div class="relative group w-full sm:w-64 md:w-80 lg:w-72 h-96 lg:h-[28rem] bg-cover bg-center rounded-lg shadow-lg hover:shadow-xl transform transition duration-500 animate-on-scroll"
+                                 style="background-image: url('assets/makrab.png');">
+                                {{-- efek --}}
+                                <div class="absolute inset-0 bg-[#121026] rounded-lg opacity-60 transition-opacity duration-500 group-hover:opacity-0"></div>
+                                {{-- awal --}}
+                                <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl md:2xl transition-all duration-500 group-hover:translate-y-[-20px] group-hover:opacity-0">
+                                    Program Kerja 3
+                                </div>
+                                {{-- saat hover --}}
+                                <div class="absolute inset-0 flex flex-col items-center text-white justify-center text-center text-white-400 p-4 opacity-0 translate-y-[20px] transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                                    <h2 class="font-bold text-xl">Program Kerja 3</h2>
+                                    <p class="text-sm mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla, deserunt cum dolores qui tempora ipsa, eveniet non inventore quis commodi, eaque similique necessitatibus perspiciatis dicta incidunt natus sequi iure.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative swiper-slide">
-                            <img src="assets/wakabem_remove.png" alt="User Image" class=" w-full h-full object-cover hover:scale-110 transition ease-in-out">
-                            <div class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
-                                <div class="text-center text-white">
-                                    <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                                    <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
+
+                        <div class="swiper-slide">
+                            <div class="relative group w-full sm:w-64 md:w-80 lg:w-72 h-96 lg:h-[28rem] bg-cover bg-center rounded-lg shadow-lg hover:shadow-xl transform transition duration-500 animate-on-scroll"
+                                 style="background-image: url('assets/makrab.png');">
+                                {{-- efek --}}
+                                <div class="absolute inset-0 bg-[#121026] rounded-lg opacity-60 transition-opacity duration-500 group-hover:opacity-0"></div>
+                                {{-- awal --}}
+                                <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl md:2xl transition-all duration-500 group-hover:translate-y-[-20px] group-hover:opacity-0">
+                                    Program Kerja 4
+                                </div>
+                                {{-- saat hover --}}
+                                <div class="absolute inset-0 flex flex-col items-center text-white justify-center text-center text-white-400 p-4 opacity-0 translate-y-[20px] transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                                    <h2 class="font-bold text-xl">Program Kerja 4</h2>
+                                    <p class="text-sm mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla, deserunt cum dolores qui tempora ipsa, eveniet non inventore quis commodi, eaque similique necessitatibus perspiciatis dicta incidunt natus sequi iure.</p>
                                 </div>
                             </div>
                         </div>
+
+                        
+                        
                     </div>
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
