@@ -29,6 +29,13 @@ class bidang extends Seeder
                 'path_logo_bidang' => 'assets/logo_bidang/PSDM.png',
             ],
             [
+                'bidang' => 'Bidang Riset dan keilmuwan', 
+                'slug' => 'bidang-riset-dan-keilmuwan',
+                'penjelasan' => '',
+                'path_foto_bidang' => 'assets/foto_bidang/RISKEL.png',
+                'path_logo_bidang' => 'assets/logo_bidang/RISKEL.png',
+            ],
+            [
                 'bidang' => 'Bidang Kesejahteraan Mahasiswa', 
                 'slug' => 'bidang-kesejahteraan-mahasiswa',
                 'penjelasan' => 'Bidang Kesejahteraan Mahasiswa BEM FSM Undip hadir untuk memastikan terpenuhinya hak-hak kesejahteraan mahasiswa, sesuai dengan tujuan negara dan universitas. Bidang ini berfokus pada membantu dan melayani mahasiswa FSM dalam berbagai aspek, seperti UKT, beasiswa, dan karier, guna mendukung kesejahteraan mereka selama menjalani kehidupan akademik. Dengan adanya Bidang Kesejahteraan Mahasiswa, diharapkan mahasiswa FSM dapat meraih kesejahteraan yang layak dan dapat fokus dalam pengembangan diri serta studi mereka.',
@@ -85,9 +92,9 @@ class bidang extends Seeder
                 'path_logo_bidang' => 'assets/logo_bidang/KMI.png',
             ],
             [
-                'bidang' => 'Biro Kantor Media Informasi', 
-                'slug' => 'biro-kantor-media-informasi',
-                'penjelasan' => 'Biro Kantor Media Informasi (KMI) BEM FSM Undip 2024 berfungsi sebagai ujung tombak dalam publikasi dan pembentukan citra positif melalui berbagai kanal media. Tanggung jawab utamanya adalah mengelola dan menyampaikan informasi yang aktual, relevan, dan edukatif, dengan mengikuti tren terkini agar tetap up-to-date. Dengan mengemas informasi secara menarik dan kreatif, Biro KMI berupaya menjangkau publik luas dan mendorong keterlibatan mahasiswa FSM Undip dalam kegiatan BEM, sekaligus memperkuat brand image BEM FSM Undip di mata masyarakat.',
+                'bidang' => 'Biro Hubungan Masyarakat', 
+                'slug' => 'biro-hubungan-masyarakat',
+                'penjelasan' => '',
                 'path_foto_bidang' => 'assets/foto_bidang/KMI.png',
                 'path_logo_bidang' => 'assets/logo_bidang/KMI.png',
             ],

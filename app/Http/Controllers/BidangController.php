@@ -32,11 +32,13 @@ class BidangController extends Controller
                   ->where('jabatan', 'not like', '%Kepala Biro%')
                   ->where('jabatan', 'not like', '%Wakil Kepala%');
         })->get();
+
+        $programkerja = $bidang->programkerjas;
         
         $firstWord = strtok(strtoupper($bidang->bidang), ' '); // Gets the first word in uppercase // Gets the first word
         $remainingWords = substr($bidang->bidang, strlen($firstWord) + 1); // Gets the rest of the string
     
-        return view('bidang', compact('bidang', 'ketua', 'anggota', 'firstWord', 'remainingWords'));
+        return view('bidang', compact('bidang', 'ketua', 'anggota', 'firstWord', 'remainingWords', 'programkerja'));
     }
 }
 

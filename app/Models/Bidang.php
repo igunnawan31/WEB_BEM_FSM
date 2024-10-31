@@ -21,4 +21,8 @@ class Bidang extends Model
     public function anggotas() : HasMany {
         return $this->hasMany(Anggota::class);
     }
+
+    public function programkerjas() : HasMany {
+        return $this->hasMany(ProgramKerja::class);
+    }
 }

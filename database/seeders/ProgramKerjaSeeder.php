@@ -22,12 +22,6 @@ class ProgramKerjaSeeder extends Seeder
                 'path_foto_proker' => '',
             ],
             [
-                'namaproker' => 'Open Recruitment',
-                'bidang_id' => 1,
-                'deskripsi' => 'Open Recruitment merupakan rangkaian proses perekrutan Kepala Divisi dan Staf Tim/Bidang/Biro BEM FSM Undip 2024. Proses perekrutan dilakukan pada awal kepengurusan dengan menetapkan standar dan tahap penyeleksian dalam kualifikasi tertentu.',
-                'path_foto_proker' => '',
-            ],
-            [
                 'namaproker' => 'Open House',
                 'bidang_id' => 1,
                 'deskripsi' => 'Open House merupakan wadah untuk mensosialisasikan setiap kegiatan, nilai, dan arahan kerja yang akan dilaksanakan BEM FSM Undip 2024 kepada seluruh mahasiswa FSM UNDIP.',
