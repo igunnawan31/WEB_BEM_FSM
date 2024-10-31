@@ -12,9 +12,9 @@ class IgpostController extends Controller
      */
     public function index()
     {
-        $postigs = Igpost::all();
+        $igposts = Igpost::all();
 
-        return view('informasi', ['postigs' => $postigs]);
+        return view('informasi', ['igposts' => $igposts]);
     }
 
     /**
