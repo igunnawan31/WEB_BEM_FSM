@@ -32,7 +32,7 @@ class IgpostResource extends Resource
                 Section::make()->schema([
                     TextInput::make('deskripsi_foto')
                         ->label('Deskripsi'),
-                    FileUpload::make('post')
+                    FileUpload::make('post_foto')
                         ->label('Foto Postingan BEM FSM')
                         ->imageEditorAspectRatios([
                             '1:1'
@@ -41,6 +41,9 @@ class IgpostResource extends Resource
                         ->directory('uploads')
                         ->disk('public')
                         ->visibility('public')
+                        ->required(),
+                    TextInput::make('linkig')
+                        ->label('Link Instagram')
                         ->required(),
                     Select::make('bidang_id')
                         ->label('Bidang')
@@ -69,12 +72,13 @@ class IgpostResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('deskripsi_foto'),
+                TextColumn::make('linkg'),
                 TextColumn::make('bidang_id')
                     ->label('Nama Bidang')
                     ->getStateUsing(static function ($record) {
-                        return $record->bidang ? $record->bidang->bidang : 'N/A'; 
+                        return $record->bidang ? $record->bidang->bidang : 'N/A';
                     }),
-                ImageColumn::make('post'),
+                ImageColumn::make('post_foto'),
                 TextColumn::make('created_at')->since()
             ])
             ->filters([

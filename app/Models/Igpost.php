@@ -10,12 +10,14 @@ class Igpost extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'post',
+        'post_foto',
+        'linkig',
         'bidang_id',
         'deskripsi_foto',
     ];
 
-    public function bidang() : BelongsTo {
+    public function bidang(): BelongsTo
+    {
         return $this->belongsTo(Bidang::class, 'bidang_id');
     }
 }

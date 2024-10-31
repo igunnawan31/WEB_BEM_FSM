@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('igposts', function (Blueprint $table) {
             $table->id();
-            $table->string('post');
+            $table->string('post_foto');
+            $table->string('linkig');
             $table->string('deskripsi_foto');
             $table->foreignId('bidang_id')->constrained(
-                table:'bidangs',
+                table: 'bidangs',
                 indexName: 'igposts_bidang_id'
             );
             $table->timestamps();
