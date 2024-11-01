@@ -11,16 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('program_kerjas', function (Blueprint $table) {
+        Schema::create('agendas', function (Blueprint $table) {
             $table->id();
-            $table->string('namaproker');
+            $table->string('namaagenda');
             $table->foreignId('bidang_id')->constrained(
                 table:'bidangs',
-                indexName: 'program_kerjas_bidang_id'
+                indexName: 'agendas_bidang_id'
             );
-            // $table->string('bidang');
             $table->string('deskripsi', length: 550);
-            $table->string('path_foto_proker')->nullable();
+            $table->string('path_foto_agenda')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('program_kerjas');
+        Schema::dropIfExists('agendas');
     }
 };

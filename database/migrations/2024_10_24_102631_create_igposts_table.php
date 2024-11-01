@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('post_foto');
             $table->string('linkig');
+            $table->string('tipepostingan');
             $table->string('deskripsi_foto');
             $table->foreignId('bidang_id')->constrained(
                 table: 'bidangs',

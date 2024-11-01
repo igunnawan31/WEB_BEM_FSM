@@ -42,13 +42,6 @@
         </div>
         <div class="container mx-auto px-6 font-Poppins sm:flex
         sm:flex-wrap sm:gap-6 sm: justify-evenly">
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-60 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-            </div>
             @foreach ($igposts as $igpost)
                 <div
                     class="rounded-md shadow-lg overflow-hidden mb-10
@@ -60,21 +53,6 @@
 
                 </div>
             @endforeach
-            {{-- <div
-                class="rounded-md shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-
-            </div> --}}
-            <div
-                class="rounded-md shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-            </div>
         </div>
     </section>
     <!-- Section Informasi - Post End -->
@@ -87,37 +65,16 @@
         </div>
         <div class="container mx-auto px-6 font-Poppins sm:flex
         sm:flex-wrap sm:gap-6 sm: justify-evenly">
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-60 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-
-            </div>
-            <div
-                class="rounded-md shadow-lg overflow-visible mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-
-            </div>
-            <div
-                class="rounded-md shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-
-            </div>
-            <div
-                class="rounded-md shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-            </div>
+            @foreach ($kemahasiswaan as $kmhs)
+                <div
+                    class="rounded-lg shadow-lg overflow-hidden mb-10
+                sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-60 hover:opacity-100 ease-in-out transition duration-300">
+                    <a href="{{ $kmhs->linkig }}" class="w-full h-full block">
+                        <img src="{{ asset('storage/uploads/' . $kmhs->post_foto) }}" 
+                            alt="{{ $kmhs->deskripsi_foto }}" class="w-full h-full object-cover">
+                    </a>
+                </div>
+            @endforeach
         </div>
     </section>
     <!-- Section Kemahasiswaan - Post End -->
@@ -130,37 +87,17 @@
         </div>
         <div class="container mx-auto px-6 font-Poppins sm:flex
         sm:flex-wrap sm:gap-6 sm: justify-evenly">
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-60 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
+            @foreach ($karir as $kr)
+                <div
+                    class="rounded-lg shadow-lg overflow-hidden mb-10
+                sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-60 hover:opacity-100 ease-in-out transition duration-300">
+                    <a href="{{ $kr->linkig }}" class="w-full h-full block">
+                        <img src="{{ asset('storage/uploads/' . $kr->post_foto) }}" 
+                            alt="{{ $kr->deskripsi_foto }}" class="w-full h-full object-cover">
+                    </a>
 
-            </div>
-            <div
-                class="rounded-md shadow-lg overflow-visible mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-
-            </div>
-            <div
-                class="rounded-md shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-
-            </div>
-            <div
-                class="rounded-md shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-            </div>
+                </div>
+            @endforeach
         </div>
     </section>
     <!-- Section Karir dan Profesi - Post End -->
@@ -173,37 +110,16 @@
         </div>
         <div class="container mx-auto px-6 font-Poppins sm:flex
         sm:flex-wrap sm:gap-6 sm: justify-evenly">
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-60 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
+            @foreach ($beasiswa as $bsw)                
+                <div
+                    class="rounded-lg shadow-lg overflow-hidden mb-10
+                sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-60 hover:opacity-100 ease-in-out transition duration-300">
+                    <a href="{{ $bsw->linkig }}" class="w-full h-full block">
+                        <img src="{{ asset('storage/uploads/' . $bsw->post_foto) }}" alt="{{ $bsw->deskripsi_foto }}" class="w-full h-full object-cover">
+                    </a>
 
-            </div>
-            <div
-                class="rounded-md shadow-lg overflow-visible mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-
-            </div>
-            <div
-                class="rounded-md shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-
-            </div>
-            <div
-                class="rounded-md shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-            </div>
+                </div>
+            @endforeach
         </div>
     </section>
     <!-- Section Kemahasiswaan - Post End -->
@@ -216,38 +132,16 @@
         </div>
         <div class="container mx-auto px-6 font-Poppins sm:flex
         sm:flex-wrap sm:gap-6 sm: justify-evenly">
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-60 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
+            $@foreach ($administrasi as $adm)
+                <div
+                    class="rounded-lg shadow-lg overflow-hidden mb-10
+                sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-60 hover:opacity-100 ease-in-out transition duration-300">
+                    <a href="{{ $adm->linkig }}" class="w-full h-full block">
+                        <img src="{{ asset('storage/uploads/' . $adm->post_foto) }}" alt="{{ $adm->deskripsi_foto }}" class="w-full h-full object-cover">
+                    </a>
 
-            </div>
-            <div
-                class="rounded-md shadow-lg overflow-visible mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-
-            </div>
-            <div
-                class="rounded-md shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-
-            </div>
-            <div
-                class="rounded-md shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-transparent md:w-80 lg:w-72 opacity-65 hover:opacity-100 ease-in-out transition duration-300">
-                <a href="https://instagram.com/bemfsm_undip" class="w-full h-full block">
-                    <img src="assets/contoh_postingan.png" alt="Gambar Contoh" class="w-full h-full object-cover">
-                </a>
-            </div>
-
+                </div>
+            @endforeach
         </div>
     </section>
     <!-- Section Karir dan Profesi - Post End -->

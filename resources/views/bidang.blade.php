@@ -113,9 +113,9 @@
 
     <!-- Section Program Kerja -->
     <section id="Programkerja" class="pt-32">
-        <div class="w-full h-full bg-[#121026]">
+        <div class="w-full h-full bg-[#121026] pb-32">
             <div class="py-10 mb-10">
-                <h1 class="font-bold text-white text-3xl text-center md:text-4xl lg:text-5xl">Program Kerja Biro KMI</h1>
+                <h1 class="font-bold text-white text-3xl text-center md:text-4xl lg:text-5xl">Program Kerja {{ $bidang->bidang }}</h1>
             </div>
             <div class="container swiper">
                 <div class="slider-wrapper">
@@ -135,6 +135,42 @@
                                     <div class="absolute inset-0 flex flex-col items-center text-white justify-center text-center text-white-400 p-4 opacity-0 translate-y-[20px] transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                                         <h2 class="font-bold text-xl">{{ $proker->namaproker }}</h2>
                                         <p class="text-sm mt-4">{{ $proker->deskripsi }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach            
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Agenda">
+        <div class="w-full h-full bg-white pb-32">
+            <div class="py-10 mb-10">
+                <h1 class="font-bold text-[#121026] text-3xl text-center md:text-4xl lg:text-5xl">Agenda {{ $bidang->bidang }}</h1>
+            </div>
+            <div class="container swiper">
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper">
+                        
+                        @foreach ($agenda as $agen)
+                            <div class="swiper-slide overflow-hidden">
+                                <div class="relative group w-full sm:w-64 md:w-72 lg:w-80 h-96 lg:h-[28rem] bg-cover bg-center rounded-lg shadow-lg hover:shadow-xl transform transition duration-500 animate-on-scroll">
+                                    <img src="{{ asset('storage/' . $agen->path_foto_agenda) }}" alt="{{ $agen->namaagenda }}" class="w-full h-full object-cover rounded-lg">
+                                    {{-- efek warna --}}
+                                    <div class="absolute inset-0 bg-[#8781cb] rounded-lg opacity-60 transition-opacity duration-500 group-hover:opacity-0"></div>
+                                    {{-- awal --}}
+                                    <div class="absolute inset-0 flex items-center justify-center text-[#121026] font-bold text-xl md:2xl transition-all duration-500 group-hover:translate-y-[-20px] group-hover:opacity-0">
+                                        {{ $agen->namaagenda }}
+                                    </div>
+                                    {{-- saat hover --}}
+                                    <div class="absolute inset-0 flex flex-col items-center text-[#121026] justify-center text-center text-white-400 p-4 opacity-0 translate-y-[20px] transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                                        <h2 class="font-bold text-xl">{{ $agen->namaagenda }}</h2>
+                                        <p class="text-sm mt-4">{{ $agen->deskripsi }}</p>
                                     </div>
                                 </div>
                             </div>

@@ -34,11 +34,13 @@ class BidangController extends Controller
         })->get();
 
         $programkerja = $bidang->programkerjas;
+
+        $agenda = $bidang->agendas;
         
         $firstWord = strtok(strtoupper($bidang->bidang), ' '); // Gets the first word in uppercase // Gets the first word
         $remainingWords = substr($bidang->bidang, strlen($firstWord) + 1); // Gets the rest of the string
     
-        return view('bidang', compact('bidang', 'ketua', 'anggota', 'firstWord', 'remainingWords', 'programkerja'));
+        return view('bidang', compact('bidang', 'ketua', 'anggota', 'firstWord', 'remainingWords', 'programkerja', 'agenda'));
     }
 }
 

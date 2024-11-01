@@ -2,23 +2,21 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Igpost extends Model
+class Agenda extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'post_foto',
-        'linkig',
-        'tipepostingan',
+        'namaproker',
         'bidang_id',
-        'deskripsi_foto',
+        'deskripsi',
+        'path_foto_proker',
     ];
 
-    public function bidang(): BelongsTo
-    {
+    public function bidang() : BelongsTo {
         return $this->belongsTo(Bidang::class, 'bidang_id');
     }
 }

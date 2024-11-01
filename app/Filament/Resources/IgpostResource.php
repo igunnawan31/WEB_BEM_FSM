@@ -42,6 +42,16 @@ class IgpostResource extends Resource
                         ->disk('public')
                         ->visibility('public')
                         ->required(),
+                    Select::make('tipepostingan')
+                        ->label('Tipe Postingan')
+                        ->required()
+                        ->options([
+                            '1' => 'Postingan Biasa',
+                            '2' => 'Kemahasiswaan',
+                            '3' => 'Karir dan Profesi',
+                            '4' => 'Beasiswa',
+                            '5' => 'Administrasi',
+                        ]),
                     TextInput::make('linkig')
                         ->label('Link Instagram')
                         ->required(),
