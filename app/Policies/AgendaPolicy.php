@@ -13,7 +13,7 @@ class AgendaPolicy
      */
     public function viewAny(User $user): bool
     {
-        //
+        return $user->role === 'admin';
     }
 
     /**
