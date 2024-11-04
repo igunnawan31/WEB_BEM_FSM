@@ -46,33 +46,41 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.forEach(element => observer.observe(element));
 });
 
+
 const swiper = new Swiper('.slider-wrapper', {
     loop: true,
     grabCursor: true,
-    spaceBetween: 40,
+    spaceBetween: 16, // Menambahkan jarak 16 piksel antara setiap slide
   
-    // If we need pagination
+    // Jika kita memerlukan paginasi
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
     },
   
-    // Navigation arrows
+    // Tombol navigasi
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 
     breakpoints: {
         0: {
             slidesPerView: 1
         },
-        620: {
+        480: {
             slidesPerView: 2
+        },
+        768: {
+            slidesPerView: 3
         },
         1024: {
             slidesPerView: 3
+        },
+        1280: {
+            slidesPerView: 4
         }
     }
 });
+

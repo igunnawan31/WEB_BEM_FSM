@@ -52,7 +52,7 @@
 
     <!-- Section Kepengurusan Start -->
     <section id="Kepengurusan" class="pt-10">
-        <div class="w-full h-full bg-[#121026]">
+        <div class="w-full h-full bg-blueRiung">
             <div class="py-5 mb-10">
                 <h1 class="font-bold text-white text-3xl text-center md:text-4xl lg:text-5xl">Struktur Kepengurusan</h1>
             </div>
@@ -70,9 +70,9 @@
         <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
             @foreach ($ketua as $member)
                 <div class="rounded-lg shadow-lg overflow-hidden mb-10
-                sm:w-64 bg-gradient-to-t from-[#121026] to-[#ED8720] md:w-80 lg:w-72  ease-in-out transition duration-300 relative">
+                sm:w-64 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] md:w-80 lg:w-72  ease-in-out transition duration-300 relative">
                     <img src="{{ asset('storage/' . $member->path_foto_anggota) }}" alt="Gambar Contoh" class="w-full h-full object-cover scale-[1.5] hover:scale-[1.75] -translate-y-20 transition ease-in-out">
-                    <div class="absolute w-full h-20 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
+                    <div class="absolute w-full h-20 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
                         <div class="text-center text-white">
                             <p class="font-bold text-xs">{{ $member->nama }}</p>
                             <p class="text-xs">{{ $member->jabatan }}</p>
@@ -93,9 +93,9 @@
         <div class="slider-wrapper">
             <div class="card-list swiper-wrapper">
                 @foreach ($anggota as $member)
-                <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-t from-[#121026] to-[#ED8720] relative swiper-slide">
+                <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] relative swiper-slide">
                     <img src="{{ asset('storage/' . $member->path_foto_anggota) }}" alt="User Image" class=" w-full h-full object-cover scale-[1.5] hover:scale-[1.75] -translate-y-20 transition ease-in-out">
-                    <div class="absolute w-full h-16 bottom-6 bg-gradient-to-l from-yellow-300 to-[#ED8720] flex items-center justify-center shadow-xl">
+                    <div class="absolute w-full h-16 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
                         <div class="text-center text-white">
                             <p class="font-bold text-xs">{{ $member->nama }}</p>
                             <p class="text-xs">{{ $member->jabatan }}</p>
@@ -113,7 +113,7 @@
 
     <!-- Section Program Kerja -->
     <section id="Programkerja" class="pt-32">
-        <div class="w-full h-full bg-[#121026] pb-32">
+        <div class="w-full h-full bg-gradient-to-b from-[#DC7477] to-[#1D66A6] pb-32">
             <div class="py-10 mb-10">
                 <h1 class="font-bold text-white text-3xl text-center md:text-4xl lg:text-5xl">Program Kerja {{ $bidang->bidang }}</h1>
             </div>
