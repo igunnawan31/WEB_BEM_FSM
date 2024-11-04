@@ -19,20 +19,20 @@
                 lg:bg-transparent ">
                     <ul class="block lg:flex">
                         <li class="group">
-                            <a href="/" class="text-base text-slate-500 p-2 mx-8 rounded-lg
-                            flex group-hover:text-orange group-hover:shadow-md">Beranda</a>
+                            <a href="/" class="md:font-bold text-base  text-slate-400 p-2 mx-8 rounded-lg
+                            flex group-hover:text-redRiung group-hover:shadow-md">Beranda</a>
                         </li>
                         <li class="group">
-                            <a href="/tentangkami" class="text-base text-slate-500 p-2 mx-8 rounded-lg
-                            flex group-hover:text-orange group-hover:shadow-md">Tentang Kami</a>
+                            <a href="/tentangkami" class="md:font-bold text-base text-slate-400 p-2 mx-8 rounded-lg
+                            flex group-hover:text-redRiung group-hover:shadow-md">Tentang Kami</a>
                         </li>
                         <li class="group">
-                            <a href="/bidangs" class="text-base text-slate-500 p-2 mx-8 rounded-lg
-                            flex group-hover:text-orange group-hover:shadow-md">Bidang/Biro</a>
+                            <a href="/bidangs" class="md:font-bold text-base text-slate-400 p-2 mx-8 rounded-lg
+                            flex group-hover:text-redRiung group-hover:shadow-md">Bidang/Biro</a>
                         </li>
                         <li class="group">
-                            <a href="/informasi" class="text-base text-slate-500 p-2 mx-8 rounded-lg
-                            flex group-hover:text-orange group-hover:shadow-md">Informasi</a>
+                            <a href="/informasi" class="md:font-bold text-base text-slate-400 p-2 mx-8 rounded-lg
+                            flex group-hover:text-redRiung group-hover:shadow-md">Informasi</a>
                         </li>
                     </ul>
                 </nav>

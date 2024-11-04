@@ -21,24 +21,22 @@
     <!-- Header End -->
 
     <!-- Section Informasi Start -->
-
     <section id="informasi" class="pt-20 mt-10 pb-10 animate-on-scroll">
         <div class="w-full h-full">
             <div class="pt-10 mb-10">
                 <div class="font-bold text-center text-4xl md:text-5xl uppercase">
                     <h1 class="text-primary mb-2">Informasi</h1>
-                    <h1 class="text-primary"><span class="text-[#ED8720]">-</span>Seputar FSM<span
-                            class="text-[#ED8720]">-</span></h1>
+                    <h1 class="text-primary"><span class="text-redRiung">-</span>Seputar FSM <span class="text-redRiung ">-</span></h1>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section Informasi - Post Start -->
-    <section id="informasi-post" class="pt-20 pb-14 bg-primary animate-on-scroll">
+    <section id="informasi-post" class="pt-20 pb-14 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] animate-on-scroll">
         <div class="font-bold text-center text-4xl md:text-5xl mb-14">
-            <h1 class="text-white uppercase"><span class="text-[#ED8720]">-</span> Informasi Terbaru <span
-                    class="text-[#ED8720]">-</span></h1>
+            <h1 class="text-white uppercase"><span class="text-blueRiung">-</span> Informasi Terbaru <span
+                    class="text-blueRiung">-</span></h1>
         </div>
         <div class="container mx-auto px-6 font-Poppins sm:flex
         sm:flex-wrap sm:gap-6 sm: justify-evenly">
@@ -60,8 +58,8 @@
     <!-- Section Kemahasiswaan - Post Start -->
     <section id="kemahasiswaan-post" class="pt-20 pb-14">
         <div class="font-bold text-center text-4xl md:text-5xl mb-14">
-            <h1 class="text-primary uppercase"><span class="text-[#ED8720]">-</span> Kemahasiswaan <span
-                    class="text-[#ED8720]">-</span></h1>
+            <h1 class="text-primary uppercase"><span class="text-blueRiung">-</span> Kemahasiswaan <span
+                    class="text-blueRiung">-</span></h1>
         </div>
         <div class="container mx-auto px-6 font-Poppins sm:flex
         sm:flex-wrap sm:gap-6 sm: justify-evenly">
@@ -80,10 +78,10 @@
     <!-- Section Kemahasiswaan - Post End -->
 
     <!-- Section Karir dan Profesi - Post Start -->
-    <section id="karir-post" class="pt-20 pb-14 bg-primary">
+    <section id="karir-post" class="pt-20 pb-14 bg-gradient-to-t from-[#DC7477] to-[#1D66A6]">
         <div class="font-bold text-center text-4xl md:text-5xl mb-14">
-            <h1 class="text-white uppercase"><span class="text-[#ED8720]">-</span> Karir dan Profesi <span
-                    class="text-[#ED8720]">-</span></h1>
+            <h1 class="text-white uppercase"><span class="text-redRiung">-</span> Karir dan Profesi <span
+                    class="text-redRiung">-</span></h1>
         </div>
         <div class="container mx-auto px-6 font-Poppins sm:flex
         sm:flex-wrap sm:gap-6 sm: justify-evenly">
@@ -105,8 +103,8 @@
     <!-- Section Beasiswa - Post Start -->
     <section id="Beasiswa" class="pt-20 pb-14">
         <div class="font-bold text-center text-4xl md:text-5xl mb-14">
-            <h1 class="text-primary uppercase"><span class="text-[#ED8720]">-</span> Beasiswa <span
-                    class="text-[#ED8720]">-</span></h1>
+            <h1 class="text-primary uppercase"><span class="text-redRiung">-</span> Beasiswa <span
+                    class="text-redRiung">-</span></h1>
         </div>
         <div class="container mx-auto px-6 font-Poppins sm:flex
         sm:flex-wrap sm:gap-6 sm: justify-evenly">
@@ -125,10 +123,10 @@
     <!-- Section Kemahasiswaan - Post End -->
 
     <!-- Section Administrasi - Post Start -->
-    <section id="administrasi-post" class="pt-20 pb-14 bg-primary">
+    <section id="administrasi-post" class="pt-20 pb-14 bg-gradient-to-b from-[#DC7477] to-[#1D66A6]">
         <div class="font-bold text-center text-4xl md:text-5xl mb-14">
-            <h1 class="text-white uppercase"><span class="text-[#ED8720]">-</span> Administrasi <span
-                    class="text-[#ED8720]">-</span></h1>
+            <h1 class="text-white uppercase"><span class="text-blueRiung">-</span> Administrasi <span
+                    class="text-blueRiung">-</span></h1>
         </div>
         <div class="container mx-auto px-6 font-Poppins sm:flex
         sm:flex-wrap sm:gap-6 sm: justify-evenly">

@@ -4,20 +4,21 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
-    
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
-      fontFamily : {
-        Poppins : ['Poppins']
+      fontFamily: {
+        Poppins: ['Poppins']
       },
       colors: {
         'primary': '#121026',
-        'orange' : '#ED8720',
+        'orange': '#ED8720',
+        'blueRiung': '#1D66A6',  // Warna biru baru
+        'redRiung': '#EC6D74',    // Warna merah baru
       },
       screens: {
-        '2xl' : '1320px',
+        '2xl': '1320px',
       },
       keyframes: {
         fadeInUp: {
@@ -34,4 +35,3 @@ export default {
     require('flowbite/plugin')
   ],
 }
-
