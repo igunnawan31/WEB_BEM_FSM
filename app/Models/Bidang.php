@@ -19,7 +19,7 @@ class Bidang extends Model
     ];
 
     public function anggotas() : HasMany {
-        return $this->hasMany(Anggota::class);
+        return $this->hasMany(Anggota::class, 'bidang_id');
     }
 
     public function programkerjas() : HasMany {
