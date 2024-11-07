@@ -110,8 +110,8 @@
 
     {{-- Section Sisanya --}}
 
-    <section id="sisanya" class="pb-14">
-        <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
+    <section id="sisanya">
+        <div class="container mx-auto px-auto font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
             @foreach ($koor as $koor)
                 <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] md:w-80 lg:w-72  ease-in-out transition duration-300 relativ animate-fadeInUp">
                     <img src="{{ 'storage/01J62CP81XN6KJE0VGTP24Z36C.png' }}" alt="{{ $koor->nama }}" class="w-full h-full object-cover scale-[1.2] hover:scale-[1.3] -translate-y-4 transition ease-in-out">
@@ -127,7 +127,7 @@
 
 
     {{-- Section Bidang dan Biro --}}
-    <section id="kemahasiswaan-post" class="pt-20 pb-14">
+    <section id="kemahasiswaan-post" class="pt-20 ">
         <div class="relative h-5 w-full mx-auto flex items-center justify-center text-center mb-20">
             <div class="absolute inset-0 flex items-center">
                 <div class="w-full h-4 bg-[#DC7477]"></div>
