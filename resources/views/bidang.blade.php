@@ -181,12 +181,12 @@
             </div>
             <div class="container swiper">
                 <div class="slider-wrapper">
-                    <div class="card-list swiper-wrapper">
-
+                    <div class="card-list swiper-wrapper flex">
                         @foreach ($agenda as $agen)
-                            <div class="swiper-slide overflow-hidden">
+                            <div
+                                class="swiper-slide overflow-hidden flex-shrink-0 w-full sm:w-64 md:w-72 lg:w-80 h-96 lg:h-[28rem]">
                                 <div
-                                    class="relative group w-full sm:w-64 md:w-72 lg:w-80 h-96 lg:h-[28rem] bg-cover bg-center rounded-lg shadow-lg hover:shadow-xl transform transition duration-500 animate-on-scroll">
+                                    class="relative group w-full h-full bg-cover bg-center rounded-lg shadow-lg hover:shadow-xl transform transition duration-500 animate-on-scroll">
                                     <img src="{{ asset('storage/' . $agen->path_foto_agenda) }}"
                                         alt="{{ $agen->namaagenda }}" class="w-full h-full object-cover rounded-lg">
                                     {{-- efek warna --}}
@@ -207,7 +207,9 @@
                                 </div>
                             </div>
                         @endforeach
+
                     </div>
+
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
