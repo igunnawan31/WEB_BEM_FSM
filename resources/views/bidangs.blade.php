@@ -133,61 +133,63 @@
     {{-- Section Sisanya --}}
 
     <section id="sisanya">
-        <div class="container mx-auto px-auto font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
+        <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
             @foreach ($koor as $koor)
                 <div
                     class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] md:w-80 lg:w-72  ease-in-out transition duration-300 relativ animate-fadeInUp">
                     <img src="{{ 'storage/01J62CP81XN6KJE0VGTP24Z36C.png' }}" alt="{{ $koor->nama }}"
-                        class="w-full h-full object-cover scale-[1.2] hover:scale-[1.3] -translate-y-4 transition ease-in-out">
+                        class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out">
                     <div
-                        class="absolute w-full h-16 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
+                        class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
                         <div class="text-center text-white">
                             <p class="font-bold text-xs">{{ $koor->nama }}</p>
-                            <p class="text-xs">{{ $koor->jabatan }}</p>
+                            <p class="text-xs">{{ $koor->jabatan }}4</p>
                         </div>
                     </div>
                 </div>
             @endforeach
-            {{-- Section sisanya --}}
+
+    </section>
+    {{-- Section sisanya --}}
 
 
-            {{-- Section Bidang dan Biro --}}
-            <section id="kemahasiswaan-post" class="pt-20 ">
-                <div class="relative h-5 w-full mx-auto flex items-center justify-center text-center mb-20">
-                    <div class="absolute inset-0 flex items-center">
-                        <div class="w-full h-4 bg-[#DC7477]"></div>
-                    </div>
-                    <div class="relative px-4 bg-white z-10">
-                        <h2 class="text-black font-bold text-6xl">Bidang dan Biro</h2>
-                    </div>
-                </div>
+    {{-- Section Bidang dan Biro --}}
+    <section id="kemahasiswaan-post" class="pt-20 pb-14">
+        <div class="relative h-5 w-full mx-auto flex items-center justify-center text-center mb-20">
+            <div class="absolute inset-0 flex items-center">
+                <div class="w-full h-4 bg-[#DC7477]"></div>
+            </div>
+            <div class="relative px-4 bg-white z-10">
+                <h2 class="text-black font-bold text-6xl">Bidang dan Biro</h2>
+            </div>
+        </div>
 
-                {{-- <div class="font-bold text-center text-4xl md:text-5xl mb-14">
+        {{-- <div class="font-bold text-center text-4xl md:text-5xl mb-14">
             <h1 class="text-primary uppercase"><span class="text-[#ED8720]">-</span> Bidang dan Biro <span class="text-[#ED8720]">-</span></h1>
         </div> --}}
 
-                <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
-                    @foreach ($bidangs->take(12) as $bidang)
+        <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
+            @foreach ($bidangs->take(12) as $bidang)
+                <div
+                    class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-white md:w-80 lg:w-72 ease-in-out transition duration-300 relative cursor-pointer animate-fadeInUp">
+                    <a href="/bidangs/{{ $bidang->bidang }}">
+                        <img src="{{ $bidang->path_logo_bidang }}" alt="{{ $bidang->bidang }}"
+                            class="w-full h-full object-cover hover:scale-110 transition ease-in-out">
                         <div
-                            class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-white md:w-80 lg:w-72 ease-in-out transition duration-300 relative cursor-pointer animate-fadeInUp">
-                            <a href="/bidangs/{{ $bidang->bidang }}">
-                                <img src="{{ $bidang->path_logo_bidang }}" alt="{{ $bidang->bidang }}"
-                                    class="w-full h-full object-cover hover:scale-110 transition ease-in-out">
-                                <div
-                                    class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
-                                    <div class="text-center text-white">
-                                        <p class="font-bold text-xs">{{ $bidang->bidang }}</p>
-                                    </div>
-                                </div>
-                            </a>
+                            class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
+                            <div class="text-center text-white">
+                                <p class="font-bold text-xs">{{ $bidang->bidang }}</p>
+                            </div>
                         </div>
-                    @endforeach
+                    </a>
                 </div>
-            </section>
+            @endforeach
+        </div>
+    </section>
 
 
 
-            <x-footer></x-footer>
+    <x-footer></x-footer>
 </body>
 
 </html>
