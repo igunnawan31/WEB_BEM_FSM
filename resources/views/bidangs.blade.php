@@ -90,17 +90,17 @@
                     <div
                         class="w-[42rem] h-80 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] mx-auto rounded-lg shadow-lg flex items-center justify-center relative overflow-hidden">
                         <!-- First Image -->
-                        <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person1"
-                            class="scale-[0.9] md:scale-[.65] absolute -top-52 left-[20%] md:-top-96 md:left-[18%] hover:scale-75 transition ease-in-out">
+                        <img src="{{ 'storage/01J62CP81XN6KJE0VGTP24Z36C.png' }}" alt="Person1"
+                            class="scale-[.55] absolute -top-[12rem] lg:-top-44 left-[15%] md:left-[18%] hover:scale-[.65] transition ease-in-out">
 
                         <!-- Second Image -->
-                        <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person2"
-                            class="scale-[0.9] md:scale-[.65] absolute -top-52 right-[20%] md:-top-96 md:right-[18%] hover:scale-75 transition ease-in-out">
+                        <img src="{{ 'storage/01J62CP81XN6KJE0VGTP24Z36C.png' }}" alt="Person2"
+                            class="scale-[.55] absolute -top-[12rem] lg:-top-44 right-[15%] md:right-[18%] hover:scale-[.65] transition ease-in-out">
                         <div
                             class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
                             <div class="text-center text-white">
-                                <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                                <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
+                                <p class="font-bold text-xs">Feodora & Denaya Tsabitah Salwa</p>
+                                <p class="text-xs">Sekretaris 1 & 2</p>
                             </div>
                         </div>
                     </div>
@@ -109,17 +109,17 @@
                     <div
                         class="w-[42rem] h-80 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] mx-auto rounded-lg shadow-lg flex items-center justify-center relative overflow-hidden">
                         <!-- First Image -->
-                        <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person1"
-                            class="scale-[.65] absolute -top-96 left-[15%] md:left-[18%] hover:scale-75 transition ease-in-out">
+                        <img src="{{ 'storage/01J62CP81XN6KJE0VGTP24Z36C.png' }}" alt="Person1"
+                            class="scale-[.55] absolute -top-[12rem] lg:-top-44 left-[15%] md:left-[18%] hover:scale-[.65] transition ease-in-out">
 
                         <!-- Second Image -->
-                        <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person2"
-                            class="scale-[.65] absolute -top-96 right-[15%] md:right-[18%] hover:scale-75 transition ease-in-out">
+                        <img src="{{ 'storage/01J62CP81XN6KJE0VGTP24Z36C.png' }}" alt="Person2"
+                            class="scale-[.55] absolute -top-[12rem] lg:-top-44 right-[15%] md:right-[18%] hover:scale-[.65] transition ease-in-out">
                         <div
                             class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
                             <div class="text-center text-white">
-                                <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                                <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
+                                <p class="font-bold text-xs">Nila Masadah & Annisa Catur Yuniarti</p>
+                                <p class="text-xs">Bendahara 1 & 2</p>
                             </div>
                         </div>
                     </div>
@@ -132,123 +132,62 @@
 
     {{-- Section Sisanya --}}
 
-    <section id="sisanya" class="pb-14">
-        <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
-
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] md:w-80 lg:w-72  ease-in-out transition duration-300 relativ animate-fadeInUp">
-                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Gambar Contoh"
-                    class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out">
+    <section id="sisanya">
+        <div class="container mx-auto px-auto font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
+            @foreach ($koor as $koor)
                 <div
-                    class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
-                    <div class="text-center text-white">
-                        <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                        <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
+                    class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] md:w-80 lg:w-72  ease-in-out transition duration-300 relativ animate-fadeInUp">
+                    <img src="{{ 'storage/01J62CP81XN6KJE0VGTP24Z36C.png' }}" alt="{{ $koor->nama }}"
+                        class="w-full h-full object-cover scale-[1.2] hover:scale-[1.3] -translate-y-4 transition ease-in-out">
+                    <div
+                        class="absolute w-full h-16 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
+                        <div class="text-center text-white">
+                            <p class="font-bold text-xs">{{ $koor->nama }}</p>
+                            <p class="text-xs">{{ $koor->jabatan }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] relative animate-fadeInUp">
-                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person"
-                    class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out" />
-                <div
-                    class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
-                    <div class="text-center text-white">
-                        <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                        <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] relative animate-fadeInUp">
-                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person"
-                    class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out" />
-                <div
-                    class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
-                    <div class="text-center text-white">
-                        <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                        <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] relative animate-fadeInUp">
-                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person"
-                    class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out" />
-                <div
-                    class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
-                    <div class="text-center text-white">
-                        <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                        <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] relative animate-fadeInUp">
-                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person"
-                    class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out" />
-                <div
-                    class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
-                    <div class="text-center text-white">
-                        <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                        <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] relative animate-fadeInUp">
-                <img src="{{ 'storage/public/01J67ZN3WMBXDED486MXE66D5B.png' }}" alt="Person"
-                    class="w-full h-full object-cover scale-150 hover:scale-[1.75] -translate-y-20 transition ease-in-out" />
-                <div
-                    class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
-                    <div class="text-center text-white">
-                        <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                        <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {{-- Section sisanya --}}
+            @endforeach
+            {{-- Section sisanya --}}
 
 
-    {{-- Section Bidang dan Biro --}}
-    <section id="kemahasiswaan-post" class="pt-20 pb-14">
-        <div class="relative h-5 w-full mx-auto flex items-center justify-center text-center mb-20">
-            <div class="absolute inset-0 flex items-center">
-                <div class="w-full h-4 bg-[#DC7477]"></div>
-            </div>
-            <div class="relative px-4 bg-white z-10">
-                <h2 class="text-black font-bold text-6xl">Bidang dan Biro</h2>
-            </div>
-        </div>
+            {{-- Section Bidang dan Biro --}}
+            <section id="kemahasiswaan-post" class="pt-20 ">
+                <div class="relative h-5 w-full mx-auto flex items-center justify-center text-center mb-20">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full h-4 bg-[#DC7477]"></div>
+                    </div>
+                    <div class="relative px-4 bg-white z-10">
+                        <h2 class="text-black font-bold text-6xl">Bidang dan Biro</h2>
+                    </div>
+                </div>
 
-        {{-- <div class="font-bold text-center text-4xl md:text-5xl mb-14">
+                {{-- <div class="font-bold text-center text-4xl md:text-5xl mb-14">
             <h1 class="text-primary uppercase"><span class="text-[#ED8720]">-</span> Bidang dan Biro <span class="text-[#ED8720]">-</span></h1>
         </div> --}}
 
-        <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
-            @foreach ($bidangs->take(12) as $bidang)
-                <div
-                    class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-white md:w-80 lg:w-72 ease-in-out transition duration-300 relative cursor-pointer animate-fadeInUp">
-                    <a href="/bidangs/{{ $bidang->bidang }}">
-                        <img src="{{ $bidang->path_logo_bidang }}" alt="{{ $bidang->bidang }}"
-                            class="w-full h-full object-cover hover:scale-110 transition ease-in-out">
+                <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
+                    @foreach ($bidangs->take(12) as $bidang)
                         <div
-                            class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
-                            <div class="text-center text-white">
-                                <p class="font-bold text-xs">{{ $bidang->bidang }}</p>
-                            </div>
+                            class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-white md:w-80 lg:w-72 ease-in-out transition duration-300 relative cursor-pointer animate-fadeInUp">
+                            <a href="/bidangs/{{ $bidang->bidang }}">
+                                <img src="{{ $bidang->path_logo_bidang }}" alt="{{ $bidang->bidang }}"
+                                    class="w-full h-full object-cover hover:scale-110 transition ease-in-out">
+                                <div
+                                    class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
+                                    <div class="text-center text-white">
+                                        <p class="font-bold text-xs">{{ $bidang->bidang }}</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    @endforeach
                 </div>
-            @endforeach
-        </div>
-    </section>
+            </section>
 
 
 
-    <x-footer></x-footer>
+            <x-footer></x-footer>
 </body>
 
 </html>

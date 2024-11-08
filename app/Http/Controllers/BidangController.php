@@ -10,7 +10,12 @@ class BidangController extends Controller
     public function index() {
         // Retrieve all bidang records from the database
         $bidangs = Bidang::all();
-        return view('bidangs', compact('bidangs'));
+
+        $koor = $bidangs->flatMap(function($bidang) {
+            return $bidang->anggotas()->where('jabatan', 'like', '%Koordinator%')->get();
+        });
+
+        return view('bidangs', compact('bidangs', 'koor'));
     }
 
     public function show($namabidang) 

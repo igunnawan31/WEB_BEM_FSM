@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden w-[1px] bg-white self-stretch md:block "></div>
+            <div class="hidden w-[1px] bg-slate-400 self-stretch md:block "></div>
             <!-- alamat -->
             <div class="w-full px-4 md:px-8 mb-8 lg:w-1/6 self-start">
                 <h1 class="font-semibold text-2xl mb-1 md:mb-2 mt-2">Alamat</h1>
@@ -21,7 +21,7 @@
                     Jawa Tengah </p>
                 <p class="font-normal text-xs">50275</p>
             </div>
-            <div class="hidden w-[1px] bg-white self-stretch md:block "></div>
+            <div class="hidden w-[1px] bg-slate-400 self-stretch md:block "></div>
             <!-- kontak -->
             <div class="w-full px-4 md:px-8 mb-4 lg:w-1/6 self-start">
                 <h1 class="font-semibold text-2xl mb-1">Kontak</h1>
@@ -119,10 +119,10 @@
             </div>
         </div>
         <!-- footer copyright -->
-        <div class="w-full mt-4 pt-6 border-t border-white px-8">
+        <div class="w-full mt-4 pt-6 border-t border-slate-400 px-8">
             <!-- iconku -->
             <div class="flex items-center justify-center mb-4 md:justify-between mx-12 md:gap-4">
-                <p class="hidden font-medium text-xs text-center text-white md:text-sm md:block">Copyright © Muhammad
+                <p class="hidden font-medium text-center text-slate-400 md:text-xs md:block">Copyright © Muhammad
                     Gunawan | Daffa Hirza Ni'am | Mohammad Izza Hakiki | Muhammad Dimas Arya Putra
                 <p>
                 <div class="flex">
@@ -167,7 +167,7 @@
                         </a>
                 </div>
             </div>
-            <p class="font-medium text-xs text-center text-slate-300 md:hidden md:text-sm">Copyright © Muhammad Gunawan
+            <p class="font-medium text-xs text-center text-slate-400 md:hidden">Copyright © Muhammad Gunawan
                 | Daffa Hirza Ni'am | Mohammad Izza Hakiki | Muhammad Dimas Arya Putra </p>
         </div>
     </div>
