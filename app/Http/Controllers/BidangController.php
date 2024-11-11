@@ -12,7 +12,12 @@ class BidangController extends Controller
         $bidangs = Bidang::all();
 
         $koor = $bidangs->flatMap(function($bidang) {
-            return $bidang->anggotas()->where('jabatan', 'like', '%Koordinator%')->get();
+            return $bidang->anggotas()
+                          ->where(function($query) {
+                              $query->where('jabatan', 'like', '%Koordinator%')
+                                    ->orWhere('jabatan', 'like', '%Ketua Tim%');
+                          })
+                          ->get();
         });
 
         return view('bidangs', compact('bidangs', 'koor'));

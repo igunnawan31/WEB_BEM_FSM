@@ -90,11 +90,11 @@
                     <div
                         class="w-[42rem] h-80 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] mx-auto rounded-lg shadow-lg flex items-center justify-center relative overflow-hidden">
                         <!-- First Image -->
-                        <img src="{{ 'storage/01J62CP81XN6KJE0VGTP24Z36C.png' }}" alt="Person1"
-                            class="scale-[.55] absolute -top-[12rem] lg:-top-44 left-[15%] md:left-[18%] hover:scale-[.65] transition ease-in-out">
+                        <img src="{{ asset('assets/foto_bph/denaya.png') }}" alt="denaya"
+                            class="scale-[.55] absolute -top-[12rem] lg:-top-32 left-[15%] md:left-[18%] hover:scale-[.65] transition ease-in-out">
 
                         <!-- Second Image -->
-                        <img src="{{ 'storage/01J62CP81XN6KJE0VGTP24Z36C.png' }}" alt="Person2"
+                        <img src="{{ asset('assets/foto_bph/feodora.png') }}" alt="dora"
                             class="scale-[.55] absolute -top-[12rem] lg:-top-44 right-[15%] md:right-[18%] hover:scale-[.65] transition ease-in-out">
                         <div
                             class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
@@ -109,12 +109,12 @@
                     <div
                         class="w-[42rem] h-80 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] mx-auto rounded-lg shadow-lg flex items-center justify-center relative overflow-hidden">
                         <!-- First Image -->
-                        <img src="{{ 'storage/01J62CP81XN6KJE0VGTP24Z36C.png' }}" alt="Person1"
-                            class="scale-[.55] absolute -top-[12rem] lg:-top-44 left-[15%] md:left-[18%] hover:scale-[.65] transition ease-in-out">
+                        <img src="{{ asset('assets/foto_bph/annisa.png') }}" alt="annis"
+                            class="scale-[.55] absolute -top-[12rem] lg:-top-32 left-[15%] md:left-[18%] hover:scale-[.65] transition ease-in-out">
 
                         <!-- Second Image -->
-                        <img src="{{ 'storage/01J62CP81XN6KJE0VGTP24Z36C.png' }}" alt="Person2"
-                            class="scale-[.55] absolute -top-[12rem] lg:-top-44 right-[15%] md:right-[18%] hover:scale-[.65] transition ease-in-out">
+                        <img src="{{ asset('assets/foto_bph/nila.png') }}" alt="nila"
+                            class="scale-[.55] absolute -top-[12rem] lg:-top-32 right-[15%] md:right-[18%] hover:scale-[.65] transition ease-in-out">
                         <div
                             class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
                             <div class="text-center text-white">
@@ -137,8 +137,8 @@
             @foreach ($koor as $koor)
                 <div
                     class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] md:w-80 lg:w-72  ease-in-out transition duration-300 relativ animate-fadeInUp">
-                    <img src="{{ 'storage/01J62CP81XN6KJE0VGTP24Z36C.png' }}" alt="{{ $koor->nama }}"
-                        class="w-full h-full object-cover scale-[1.2] hover:scale-[1.3] -translate-y-4 transition ease-in-out">
+                    <img src="{{ asset('storage/' . $koor->path_foto_anggota) }}" alt="{{ $koor->nama }}"
+                        class="w-full h-full object-cover hover:scale-[1.1] transition ease-in-out">
                     <div
                         class="absolute w-full h-16 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
                         <div class="text-center text-white">

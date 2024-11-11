@@ -12,7 +12,8 @@ class IgpostController extends Controller
      */
     public function index()
     {
-        $igposts = Igpost::all()->latest()->take(4)->get();
+        $igposts = Igpost::latest()->take(4)->get();
+    
         // Retrieve posts by 'tipepostingan' directly from the database
         $kemahasiswaan = Igpost::where('tipepostingan', 'Kemahasiswaan')->latest()->take(4)->get();
         $karir = Igpost::where('tipepostingan', 'Karir dan Profesi')->latest()->take(4)->get();
