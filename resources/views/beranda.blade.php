@@ -10,14 +10,14 @@
     {{-- <link rel="stylesheet" href="css/style.css"> --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
+<body class="overflow-x-hidden">
     <!-- Header Start -->
     <x-header></x-header>
 
     <!-- Header End -->
 
     <!-- Section Home Start -->
-    <section id="Home" class="relative min-h-screen pb-24 pt-36 bg-cover bg-center" style="background-image: url('assets/fsm.png');">
+    <section id="Home" class="relative min-h-screen pb-24 pt-36 bg-cover bg-center" style="background-image: url('assets/fakultas.png');">
         <div class="flex items-center justify-center h-full py-[13rem]">
             <div class="container mx-auto px-4 lg:px-8">
                 <div class="flex flex-wrap">
@@ -56,7 +56,7 @@
                     </div>
                     <!-- Slider indicators -->
                     <div class="absolute z-30 flex -translate-x-1/2 bottom-7 left-1/2 space-x-3 rtl:space-x-reverse">
-                        @foreach($posts as $index => $post)
+                        @foreach($posts as $post)
                             <button type="button" class="w-3 h-3 rounded-full" aria-current="{{ $index === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $index + 1 }}" data-carousel-slide-to="{{ $index }}"></button>
                         @endforeach
                     </div>
@@ -88,19 +88,19 @@
                     <div class="flex flex-wrap justify-center lg:justify-start gap-4">
                         <div class="text-center flex-1">
                             <div class="bg-redRiung p-4 text-white rounded-md">
-                                <h1 class="text-4xl">15</h1>
-                                <p>program</p>
+                                <h1 class="text-4xl">{{ $bidangCount }}</h1>
+                                <p>Bidang & Biro</p>
                             </div>
                         </div>
                         <div class="text-center flex-1">
                             <div class="bg-redRiung p-4 text-white rounded-md">
-                                <h1 class="text-4xl">15</h1>
-                                <p>program</p>
+                                <h1 class="text-4xl">{{ $anggotaCount }}</h1>
+                                <p>Anggota</p>
                             </div>
                         </div>
                         <div class="text-center flex-1">
                             <div class="bg-redRiung p-4 text-white rounded-md">
-                                <h1 class="text-4xl">15</h1>
+                                <h1 class="text-4xl">{{ $programCount }}</h1> 
                                 <p>program</p>
                             </div>
                         </div>
@@ -161,38 +161,15 @@
         <div class="container swiper mx-auto px-6 font-Poppins">
             <div class="slider-wrapper">
                 <div class="card-list swiper-wrapper">
-                    {{-- Postingan 1 --}}
-                    <div class="swiper-slide flex justify-center animate-fadeInUp">
-                        <div class="card w-full sm:w-40 md:w-56 lg:w-56 xl:w-64  h-60 sm:h-64 md:h-64 lg:h-80  rounded-lg shadow-lg transform opacity-60 hover:opacity-100 hover:shadow-xl overflow-hidden ease-in-out transition duration-300">
-                            <a href="https://instagram.com/bemfsm_undip" class="block w-full h-full">
-                                <img src="{{ asset('assets/contoh_postingan.png') }}" alt="Gambar Contoh" class="w-full h-full object-cover">
-                            </a>
+                    @foreach ($igposts as $igpost)
+                        <div class="swiper-slide flex justify-center animate-fadeInUp">
+                            <div class="card w-full sm:w-40 md:w-56 lg:w-56 xl:w-64 sm:h-64 md:h-64 lg:h-80 xl:h-96  rounded-lg shadow-lg transform opacity-60 hover:opacity-100 hover:shadow-xl overflow-hidden ease-in-out transition duration-300">
+                                <a href="{{ $igpost->linkig }}" class="block w-full h-full">
+                                    <img src="{{ asset('storage/' . $igpost->post_foto) }}" alt="{{ $igpost->deskripsi_foto }}" class="w-full h-full object-cover">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    {{-- Postingan 2 --}}
-                    <div class="swiper-slide flex justify-center animate-fadeInUp">
-                        <div class="card w-full sm:w-40 md:w-56 lg:w-56 xl:w-64 h-60 sm:h-64 md:h-64 lg:h-80  rounded-lg shadow-lg transform opacity-60 hover:opacity-100 hover:shadow-xl overflow-hidden ease-in-out transition duration-300">
-                            <a href="https://instagram.com/bemfsm_undip" class="block w-full h-full">
-                                <img src="{{ asset('assets/contoh_postingan.png') }}" alt="Gambar Contoh" class="w-full h-full object-cover">
-                            </a>
-                        </div>
-                    </div>
-                    {{-- Postingan 3 --}}
-                    <div class="swiper-slide flex justify-center animate-fadeInUp">
-                        <div class="card w-full sm:w-40 md:w-56 lg:w-56 xl:w-64 h-60 sm:h-64 md:h-64 lg:h-80  rounded-lg shadow-lg transform opacity-60 hover:opacity-100 hover:shadow-xl overflow-hidden ease-in-out transition duration-300">
-                            <a href="https://instagram.com/bemfsm_undip" class="block w-full h-full">
-                                <img src="{{ asset('assets/contoh_postingan.png') }}" alt="Gambar Contoh" class="w-full h-full object-cover">
-                            </a>
-                        </div>
-                    </div>
-                    {{-- Postingan 4 --}}
-                    <div class="swiper-slide flex justify-center animate-fadeInUp">
-                        <div class="card w-full sm:w-40 md:w-56 lg:w-56 xl:w-64 h-60 sm:h-64 md:h-64 lg:h-80  rounded-lg shadow-lg transform opacity-60 hover:opacity-100 hover:shadow-xl overflow-hidden ease-in-out transition duration-300">
-                            <a href="https://instagram.com/bemfsm_undip" class="block w-full h-full">
-                                <img src="{{ asset('assets/contoh_postingan.png') }}" alt="Gambar Contoh" class="w-full h-full object-cover">
-                            </a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 {{-- Swiper --}}
                 <div class="swiper-button-prev absolute top-[38%] -translate-y-1/2 left-0 z-10 text-blue-500"></div>

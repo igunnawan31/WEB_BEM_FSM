@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BerandaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\BidangController;
@@ -19,7 +20,7 @@ Route::get('/bidangs', function () {
 
 // Route::get('/bidang')
 
-Route::get('/', [PostController::class, 'index'])->name('home');
+Route::get('/', [BerandaController::class, 'index'])->name('home');
 
 Route::get('/informasi', [IgpostController::class, 'index'])->name('home');
 

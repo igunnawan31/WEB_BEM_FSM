@@ -10,10 +10,10 @@ class Agenda extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'namaproker',
+        'namaagenda',
         'bidang_id',
         'deskripsi',
-        'path_foto_proker',
+        'path_foto_agenda',
     ];
 
     public function bidang() : BelongsTo {

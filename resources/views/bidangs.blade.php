@@ -44,19 +44,18 @@
         </div>
         <div class="container mx-auto px-6 font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm: justify-evenly">
             {{-- kabem --}}
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10
-            sm:w-64 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] md:w-80 lg:w-72 ease-in-out transition duration-300 relative animate-fadeInUp">
-                <img src="{{ asset('assets/kabem-removebg.png') }}" alt="Gambar Contoh"
-                    class="w-full h-full object-cover hover:scale-110 transition ease-in-out">
-                <div
-                    class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
-                    <div class="text-center text-white">
-                        <p class="font-bold text-xs">Hana Tsabita</p>
-                        <p class="text-xs">Ketua BEM FSM 2024</p>
+            @foreach($ketua as $ketua)
+                <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] md:w-80 lg:w-72 ease-in-out transition duration-300 relative animate-fadeInUp">
+                    <img src="{{ asset('storage/' . $ketua->path_foto_anggota) }}" alt="Gambar Contoh"
+                        class="w-full h-full object-cover hover:scale-110 transition ease-in-out">
+                    <div class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
+                        <div class="text-center text-white">
+                            <p class="font-bold text-xs">{{ $ketua->nama }}</p>
+                            <p class="text-xs">Ketua BEM FSM 2024</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            @endforeach
 
             {{-- logo riung --}}
             <div
@@ -66,36 +65,63 @@
             </div>
 
             {{-- wakabem --}}
-            <div
-                class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 ease-in-out transition duration-300 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] relative animate-fadeInUp">
-                <img src="{{ asset('assets/wakabem_remove.png') }}" alt="Person"
-                    class="w-full h-full object-cover hover:scale-110 transition ease-in-out" />
-                <div
-                    class="absolute w-full h-10 bottom-6 bg-gradient-to-l from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
-                    <div class="text-center text-white">
-                        <p class="font-bold text-xs">Fikrizal Ekasastra Wibawa</p>
-                        <p class="text-xs">Wakil Ketua BEM FSM 2024</p>
+            @foreach($wakil as $wakil)
+                <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] md:w-80 lg:w-72 ease-in-out transition duration-300 relative animate-fadeInUp">
+                    <img src="{{ asset('storage/' . $wakil->path_foto_anggota) }}" alt="Gambar Contoh"
+                        class="w-full h-full object-cover hover:scale-110 transition ease-in-out">
+                    <div class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
+                        <div class="text-center text-white">
+                            <p class="font-bold text-xs">{{ $wakil->nama }}</p>
+                            <p class="text-xs">Ketua BEM FSM 2024</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
+            @endforeach
         </div>
     </section>
 
-    <section id="About" class="pb-10 px-4 lg:px-8">
+    <section id="About" class="pb-10 px-6 lg:px-8">
         <div class="container mx-auto">
             <div class="flex flex-wrap">
-
-                <div class="w-full px-2 lg:w-1/2 flex justify-center mb-10 animate-fadeInUp ">
+                <div class="md:hidden container mx-auto font-Poppins sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
+                    @foreach ($sekre as $sekre)
+                        <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] md:w-80 lg:w-72 ease-in-out transition duration-300 relativ animate-fadeInUp">
+                            <img src="{{ asset('storage/' . $sekre->path_foto_anggota) }}" alt="{{ $sekre->nama }}"
+                                class="w-full h-full object-cover hover:scale-[1.1] transition ease-in-out">
+                            <div
+                                class="absolute w-full h-16 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
+                                <div class="text-center text-white">
+                                    <p class="font-bold text-xs">{{ $sekre->nama }}</p>
+                                    <p class="text-xs">{{ $sekre->jabatan }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                    @foreach ($benda as $benda)
+                        <div class="rounded-lg shadow-lg overflow-hidden mb-10 sm:w-64 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] md:w-80 lg:w-72 ease-in-out transition duration-300 relativ animate-fadeInUp">
+                            <img src="{{ asset('storage/' . $benda->path_foto_anggota) }}" alt="{{ $benda->nama }}"
+                                class="w-full h-full object-cover hover:scale-[1.1] transition ease-in-out">
+                            <div
+                                class="absolute w-full h-16 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
+                                <div class="text-center text-white">
+                                    <p class="font-bold text-xs">{{ $benda->nama }}</p>
+                                    <p class="text-xs">{{ $benda->jabatan }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+                <div class="hidden md:flex w-full px-2 lg:w-1/2 justify-center mb-10 animate-fadeInUp">
                     <div
                         class="w-[42rem] h-80 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] mx-auto rounded-lg shadow-lg flex items-center justify-center relative overflow-hidden">
                         <!-- First Image -->
                         <img src="{{ asset('assets/foto_bph/denaya.png') }}" alt="denaya"
-                            class="scale-[.55] absolute -top-[12rem] lg:-top-32 left-[15%] md:left-[18%] hover:scale-[.65] transition ease-in-out">
-
+                            class="scale-[.55] absolute -top-[11rem] lg:-top-32 left-[15%] md:left-[18%] hover:scale-[.65] transition ease-in-out">
+                
                         <!-- Second Image -->
                         <img src="{{ asset('assets/foto_bph/feodora.png') }}" alt="dora"
-                            class="scale-[.55] absolute -top-[12rem] lg:-top-44 right-[15%] md:right-[18%] hover:scale-[.65] transition ease-in-out">
+                            class="scale-[.55] absolute -top-[11rem] lg:-top-44 right-[15%] md:right-[18%] hover:scale-[.65] transition ease-in-out">
+                        
                         <div
                             class="absolute w-full h-10 bottom-6 bg-gradient-to-r from-[#DC7477] to-[#1D66A6] flex items-center justify-center shadow-xl">
                             <div class="text-center text-white">
@@ -105,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full px-2 lg:w-1/2 flex justify-center animate-fadeInUp">
+                <div class="hidden md:flex w-full px-2 lg:w-1/2 justify-center mb-10 animate-fadeInUp">
                     <div
                         class="w-[42rem] h-80 bg-gradient-to-b from-[#DC7477] to-[#1D66A6] mx-auto rounded-lg shadow-lg flex items-center justify-center relative overflow-hidden">
                         <!-- First Image -->
